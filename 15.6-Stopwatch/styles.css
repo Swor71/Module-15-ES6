@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rajdhani;
+  color: darkorange;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top, #000000, #434343);
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .stopwatch {
+  padding-top: 150px;
+  font-size: 124px;
+}
+
+.container .controls {
+  padding: 50px;
+}
+
+.container .controls a {
+  margin: 30px;
+  text-decoration: none;
+  font-size: 48px;
+}
+
+.container .results {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 60px;
+  list-style-type: none;
+  font-size: 48px;
+  height: 300px;
+  max-width: 800px;
+}
+/*# sourceMappingURL=styles.css.map */

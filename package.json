@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel ./15.4/script.js --watch --out-file script-compiled.js"
+    "start": "babel ./15.6-Stopwatch/script.js --watch --out-file ./15.6-Stopwatch/script-compiled.js"
   },
   "keywords": [],
   "author": "",
