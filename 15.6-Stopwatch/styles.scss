@@ -24,11 +24,37 @@ body {
         font-size: 124px;
     } 
     .controls {
+        display: grid;
+        grid-template-columns: 1fr 150px 1fr;
+        grid-template-areas: 
+        "top-left top-mid top-right"
+        "bottom bottom bottom";
         padding: 50px;
         a {
-            margin: 30px;
+            margin: 10px 0;
             text-decoration: none;
             font-size: 48px;
+        }
+        .btn-top-left {
+            grid-area: top-left;
+            justify-self: end;
+        }
+        .btn-top-mid {
+            grid-area: top-mid;
+        }
+        .btn-top-right {
+            grid-area: top-right;
+            justify-self: start;
+        }
+        .btn-bottom-left {
+            grid-area: bottom;
+            justify-self: center;
+            margin-right: 240px;
+        }
+        .btn-bottom-right {
+            grid-area: bottom;
+            justify-self: center;
+            margin-left: 130px;
         }
     }
     .results {

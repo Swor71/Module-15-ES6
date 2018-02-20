@@ -26,13 +26,42 @@ body {
 }
 
 .container .controls {
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
+  grid-template-areas: "top-left top-mid top-right" "bottom bottom bottom";
   padding: 50px;
 }
 
 .container .controls a {
-  margin: 30px;
+  margin: 10px 0;
   text-decoration: none;
   font-size: 48px;
+}
+
+.container .controls .btn-top-left {
+  grid-area: top-left;
+  justify-self: end;
+}
+
+.container .controls .btn-top-mid {
+  grid-area: top-mid;
+}
+
+.container .controls .btn-top-right {
+  grid-area: top-right;
+  justify-self: start;
+}
+
+.container .controls .btn-bottom-left {
+  grid-area: bottom;
+  justify-self: center;
+  margin-right: 240px;
+}
+
+.container .controls .btn-bottom-right {
+  grid-area: bottom;
+  justify-self: center;
+  margin-left: 130px;
 }
 
 .container .results {
